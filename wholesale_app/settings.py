@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%fai)v-(vo2w_g7$ht(!tsj5=2^h8p#zy_5u@ih)2y)9&3a)1x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', 'now.sh','127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -81,10 +81,21 @@ LOGOUT_REDIRECT_URL = 'home'  # Redirect after logout
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'RaitunuDB',
+        'USER': 'postgres',
+        'PASSWORD': 'Ad3tunj1',
+        'HOST': 'localhost',
+        'PORT': '5432',  
     }
 }
 
