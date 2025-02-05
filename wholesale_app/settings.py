@@ -91,7 +91,7 @@ LOGOUT_REDIRECT_URL = 'home'  # Redirect after logout
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'RaitunuDB',
+        'NAME': 'Inventory',
         'USER': 'postgres',
         'PASSWORD': 'Ad3tunj1',
         'HOST': 'localhost',
