@@ -88,16 +88,28 @@ LOGOUT_REDIRECT_URL = 'home'  # Redirect after logout
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'Inventory',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Ad3tunj1',
+#         'HOST': 'localhost',
+#         'PORT': '5432',  
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Inventory',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'Ad3tunj1',
-        'HOST': 'localhost',
-        'PORT': '5432',  
+        'PASSWORD': 'DeyBXfZiRzXXRkjFHNEZdpsTWxwYwylS',
+        'HOST': 'autorack.proxy.rlwy.net',
+        'PORT': '57827',  
     }
 }
+
 
 
 # Password validation
