@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -81,23 +82,7 @@ LOGOUT_REDIRECT_URL = 'home'  # Redirect after logout
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'Inventory',
-#         'USER': 'postgres',
-#         'PASSWORD': 'Ad3tunj1',
-#         'HOST': 'localhost',
-#         'PORT': '5432',  
-#     }
-# }
 
 DATABASES = {
     'default': {
@@ -148,7 +133,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 # Add this if you have a static directory
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
